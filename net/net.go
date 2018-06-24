@@ -42,8 +42,6 @@ func InitRsp(statusCode int64, rsp *restful.Response, opts ...interface{}) {
 		}
 	}
 	rsp.WriteEntity(result)
-	// b, _ := json.Marshal(result)
-	// rsp.Body = string(b)
 }
 
 // Fetch data from internet
